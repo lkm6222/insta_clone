@@ -62,7 +62,7 @@ body {
   border: 2px solid var(--box-border-color);
   border-radius: 5px;
 
-  background-color: #fff;
+  background-color: var(--box-bg);
 
   padding: 30px 10px;
   height: 500px;
@@ -89,6 +89,7 @@ body {
   
   border-style: solid;
   border-color: var(--box-border-color);
+  background-color: var(--box-bg);
 
 }
 
