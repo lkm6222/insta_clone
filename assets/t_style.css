@@ -1,0 +1,260 @@
+:root {
+  --body-bg: #fafafa;
+  --box-bg: #fff;
+  --box-border-color: #dbdbdb;
+  --txt-color: #262626;
+  --txt-second-color: #8e8e8e;
+  --light-blue: #0095f6;
+  --dark-blue: #00376b;
+  --fb-color: #385185;
+}
+
+.dark {
+  --body-bg: #151515;
+  --box-bg: #353535;
+  --box-border-color: #666565;
+  --txt-color: #d2d2d2;
+}
+
+body{
+  background-color: var(--body-bg);
+  color: var(--txt-color);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+input, 
+button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.btn-blue{
+  padding: 12px 0;
+  border-radius: 8px;
+  font-weight: 700;
+  color: #fff;
+  width: 100%;
+  background-color: var(--light-blue);
+  cursor: pointer;
+}
+
+.dark-logo{
+  display: none;
+}
+
+body.dark .dark-logo{
+  display: block;
+}
+
+body.dark .light-logo{
+  display: none;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /*View point Height*/
+  height: 100vh;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  width: 360px;
+}
+
+.box{
+  background-color: var(--box-bg);
+  width: 100%;
+  border: 1px solid var(--box-border-color);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.input-box{
+  padding: 40px;
+}
+
+.logo{
+  width: 175px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.logo img{
+  width: 100%;
+  object-fit: contain;
+}
+
+.login-form{
+  margin-top: 40px;
+}
+
+
+.animate-input{
+  /* Div를 기준점으로 span태그 위치 정렬 */
+  position: relative;
+
+  height: 36px;
+  padding: 0 8px;
+  margin: 6px 0;
+  border: 1px solid var(--box-border-color);
+  border-radius: 4px;
+}
+
+.animate-input input{
+  width: 100%;
+  height: 100%;
+}
+
+.animate-input span{
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  font-size: 12px;
+  color: var(--box-border-color);
+  /* 클릭했을때 존재감 없도록 설정 */
+  pointer-events: none;
+  transition: all 200ms ease-in-out;
+}
+
+.animate-input.active{
+  padding: 4px 8px 0;
+}
+
+.animate-input.active span{
+  top: 2px;
+  font-size: 10px;
+}
+
+.userpw button{
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  display: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/*body에 dark 클래스 있을 때 설정 : body.dark*/
+body.dark .userpw button{
+  color: #fff;
+}
+
+/* active라는 클래스가 있을 때 button 속성 */
+.animate-input.active button{
+  display: inline;
+}
+
+/* 타입 submit 버튼 disabled 상태일때 화면*/
+button[type="submit"]:disabled{
+  cursor: not-allowed;
+  background-color: rgba(0, 149, 246, 0.3);
+}
+
+.or-box{
+  display: flex;
+  align-items: center;
+}
+
+/*or-box 하위 홀수 div 설정*/
+/*홀수: odd | 짝수 : even*/
+.or-box div:nth-child(odd){
+  flex-grow: 1;
+  height: 1px;
+  background-color: var(--box-border-color);
+}
+
+/*.or-box div:nth-child(2)*/
+.or-box div:nth-child(even){
+  margin: 30px 16px;
+  color: var(--txt-second-color);
+  font-weight: 700;
+}
+
+.fb-btn a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fb-btn img{
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  margin-right: 8px;
+}
+
+.fb-btn span{
+  color: var(--fb-color);
+  font-weight: 700;
+}
+
+.forgot-pw{
+  font-size: 12px;
+  color: var(--dark-blue);
+  margin-top: 22px;
+  display: block;
+}
+
+body.dark .forgot-pw{
+  color: #fff;
+}
+
+.join-box{
+  padding: 16px 0;
+  margin-top: 12px;
+}
+
+.join-box span{
+  color: var(--light-blue);
+  font-weight: 700;
+}
+
+.app-txt{
+  margin: 20px 0;
+}
+
+.app-down img{
+  width: 136px;
+  height: 40px;
+  object-fit: contain;
+}
+
+footer{
+  text-align: center;
+}
+
+.footer-menu-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-menu-list a{
+  color: var(--txt-second-color);
+  font-size: 14px;
+  padding: 0 8px;
+}
+
+.copyright{
+  margin: 30px 0;
+  color: var(--txt-second-color);
+}
