@@ -88,6 +88,7 @@ body {
   height: 40px;
   
   border-style: solid;
+  border-radius: 5px;
   border-color: var(--box-border-color);
   background-color: var(--box-bg);
 

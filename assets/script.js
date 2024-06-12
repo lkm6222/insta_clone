@@ -1,6 +1,4 @@
 //darkmode 클릭했을때
-//onclick 이벤트 발생 -> 다크모드로 변경
-
 //객체 받아오기
 let darkMode = document.getElementById('darkmode');
 //let logo = document.getElementById('insta-logo');
@@ -22,3 +20,5 @@ darkMode.addEventListener('click', (e) => {
         document.body.classList.remove('dark');
     }
 })
+
+
