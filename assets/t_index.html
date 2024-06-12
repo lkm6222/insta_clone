@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인 | Instagram</title>
+  <link rel="stylesheet" href="./t_style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="form-container">
+      <div class="box input-box">
+        <h1 class="logo">
+          <a class="light-logo" href="">
+            <img src="./images/logo-light.png" alt="insta-logo-light">
+          </a>
+          <a class="dark-logo" href="">
+            <img src="./images/logo-dark.png" alt="insta-logo-dark">
+          </a>
+        </h1>
+
+        <form id="login-form" class="login-form" action="">
+          <div class="animate-input">
+            <input id="userid" type="text">
+            <span>전화번호 사용자 이름 또는 이메일</span>
+          </div>
+          <div class="animate-input userpw">
+            <input id="userpw"  type="password">
+            <span>비밀번호</span>
+            <button type="button">비밀번호 표시</button>
+          </div>
+
+          <button id="submit-btn" class="btn-blue" type="submit" disabled>로그인</button>
+        </form>
+
+        <div class="or-box">
+          <div></div>
+          <div>또는</div>
+          <div></div>
+        </div>
+
+
+        <div class="fb-btn">
+          <a href="">
+            <img src="./images/facebook-icon.png" alt="facebook-icon">
+            <span>Facebook으로 로그인</span>
+          </a>
+
+          <a class="forgot-pw" href="">비밀번호를 잊으셨나요?</a>
+        </div>
+      </div>
+
+      <div class="box join-box">
+        <p>
+          계정이 없으신가요?
+          <span>가입하기</span>
+        </p>
+      </div>
+
+      <p class="app-txt">앱을 다운로드하세요.</p>
+
+      <div class="app-down">
+        <a href=""><img src="./images/app-store.png" alt="app-store"></a>
+        <a href=""><img src="./images/gg-play.png" alt="google-play"></a>
+      </div>
+    </div>
+
+    <footer>
+      <ul class="footer-menu-list">
+        <li><a href="">Meta</a></li>
+        <li><a href="">소개</a></li>
+        <li><a href="">블로그</a></li>
+        <li><a href="">채용정보</a></li>
+        <li><a href="">도움말</a></li>
+        <li><a href="">API</a></li>
+        <li><a href="">개인정보처리방침</a></li>
+        <li><a href="">약관</a></li>
+        <li><a href="">위치</a></li>
+        <li><a href="">Darkmode</a></li>
+      </ul>
+      <p class="copyright">© 2024 Instagram from Meta</p>
+    </footer>
+  </div>
+  <script src="./t_script.js"></script>
+</body>
+
+</html>
