@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram 회원가입</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="form-container">
+      <div class="box top-box">
+        <h1 class="logo">
+          <img src="/assets/images/logo-light.png" alt="Instaram-logo-light">
+        </h1>
+
+        <p class="join-msg">친구들의 사진과 동영상을 보려면 가입하세요.</p>
+        <div class="fb-login">
+          <button id="fb-btn" type="button">
+            <a href="">
+              <img src="/assets/images/facebook-icon.png" alt="facebook-icon"> Facebook으로 로그인
+            </a>
+          </button>
+        </div>
+
+        <div class="or-box">
+          <div></div>
+          <div>또는</div>
+          <div></div>
+        </div>
+        
+        <form class="join-form" action="">
+          <div class="animate-input">
+            <input id="userid" type="text">
+            <span>휴대폰 번호 또는 이메일주소</span>
+          </div>
+          <div class="animate-input username">
+            <input id="username" type="text">
+            <span>성명</span>
+          </div>
+          <div class="animate-input usernickname">
+            <input id="usernickname" type="text">
+            <span>사용자 이름</span>
+          </div>
+          <div class="animate-input userpw">
+            <input id="password" type="password">
+            <span>비밀번호</span>
+          </div>
+
+          <div class="join-msg2">
+            <p>저희 서비스를 이용하는 사람이 회원님의 연락처 정보를 Instagram에 업로드 했을 수도 있습니다.
+              <span>더 알아보기</span>
+            </p>
+          </div>
+
+          <div class="join-btn">
+            <a href="">
+              <button type="button">가입</button>
+            </a>
+          </div>
+        </form>
+      </div>
+
+      <div class="box login-box">
+        <p>계정이 있으신가요?
+          <a href=""><span>로그인</span></a>
+        </p>
+      </div>
+
+      <p class="app-txt">앱을 다운로드하세요.</p>
+
+      <div class="app-down">
+        <a href=""><img src="/assets/images/app-store.png" alt="app-store"></a>
+        <a href=""><img src="/assets/images/gg-play.png" alt="google-play"></a>
+      </div>
+    </div>
+
+    <footer>
+      <ul class="footer-menu-list">
+        <li><a href="">Meta</a></li>
+        <li><a href="">소개</a></li>
+        <li><a href="">블로그</a></li>
+        <li><a href="">채용정보</a></li>
+        <li><a href="">도움말</a></li>
+        <li><a href="">API</a></li>
+        <li><a href="">개인정보처리방침</a></li>
+        <li><a href="">약관</a></li>
+        <li><a href="">위치</a></li>
+        <li><a id="mode-toggle" href="">Darkmode</a></li>
+      </ul>
+      <p class="copyright">© 2024 Instagram from Meta</p>
+    </footer>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
