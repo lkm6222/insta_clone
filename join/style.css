@@ -43,6 +43,28 @@ button {
   background-color: transparent;
 }
 
+.btn-blue{
+  padding: 12px 0;
+  border-radius: 8px;
+  font-weight: 700;
+  color: #fff;
+  width: 100%;
+  background-color: var(--light-blue);
+  cursor: pointer;
+}
+
+.dark-logo{
+  display: none;
+}
+
+body.dark .dark-logo{
+  display: block;
+}
+
+body.dark .light-logo{
+  display: none;
+}
+
 
 .wrapper {
   display: flex;
@@ -50,7 +72,6 @@ button {
   justify-content: space-between;
   align-items: center;
 }
-
 
 .form-container {
   width: 360px;
@@ -163,7 +184,27 @@ button {
   left: 8px;
   color: var(--txt-second-color);
   pointer-events: none;
+  transition: all 200ms ease-in-out;
 }
+
+.animate-input.active{
+  padding: 4px 8px 0;
+}
+
+.animate-input.active span{
+  top: 2px;
+  font-size: 10px;
+}
+
+.userpw button{
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  display: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 
 .join-msg2{
   margin: 20px 0;
@@ -175,15 +216,17 @@ button {
   font-weight: 700;
 }
 
-.join-btn{
-  margin-top: 20px;
-  width: 100%;
-  height: 35px;
-  background-color: var(--light-blue);
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+
+/* active라는 클래스가 있을 때 button 속성 */
+.animate-input.active button{
+  display: inline;
+}
+
+/* 타입 submit 버튼 disabled 상태일때 화면*/
+button[type="submit"]:disabled{
+  cursor: not-allowed;
+  background-color: rgba(0, 149, 246, 0.3);
 }
 
 .login-box{
@@ -195,7 +238,6 @@ button {
   color: var(--light-blue);
   font-weight: 700;
 }
-
 
 .app-txt{
   margin: 20px 0;
