@@ -50,6 +50,10 @@ animateInput.forEach((item) => {
       //allTrue 안 값이 모두 참일 때
       //joinBtn disabled 속성 remove
       joinBtn.removeAttribute('disabled');
+
+      //j-Query에서는 .attr('disabled', true/false);
+      //vanilla Js에서는 속성 제거할 때 false X | removeAttribute() 사용!
+      //joinBtn.setAttribute('disabled', false);
     }
     else {
       joinBtn.setAttribute('disabled', true);
