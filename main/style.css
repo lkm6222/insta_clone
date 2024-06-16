@@ -23,13 +23,17 @@
 
 a {
   text-decoration: none;
-  columns: var(--txt-color);
+  color: var(--txt-color);
 }
 
 button,
 input {
   border: none;
   background-color: var(--body-bg);
+}
+
+i{
+  color: var(--txt-color);
 }
 
 
@@ -65,14 +69,14 @@ span{
   background-color: var(--body-bg);
   display: flex;
   justify-content: center;
-  align-items: center;
+
 
 }
 
 .post {
 
-  margin: 30px auto;
-  width: 90%;
+  margin: 30px;
+  width: 55%;
 
   border: 1px solid var(--box-border-color);
 }
@@ -89,8 +93,10 @@ span{
   display: flex;
 }
 
-.user-info img {
+.user-img {
   width: 40px;
+  border-radius: 40px;
+  margin: 5px;
 
 }
 
@@ -121,9 +127,13 @@ span{
 }
 
 /*아이콘만 오른쪽정렬하기*/
-.commented{
+.comment-list{
   border: 3px solid orange;
   width: 400px;
+  display: flex;
+}
+
+.comment-input{
   display: flex;
 }
 
@@ -132,4 +142,41 @@ span{
   height: 50px;
   padding: 0 10px;
   width: 100%;
+}
+
+.comment-input button{
+  border-top: 1px solid var(--box-border-color);
+  width: 40px;
+  color: var(--light-blue);
+  font-weight: 700;
+}
+
+.post-recommend{
+  border: 1px solid var(--box-border-color);
+  width: 250px;
+  height: 270px;
+  margin: 30px;
+  background-color: #fff;
+  padding: 10px;
+  font-size: 13px;
+}
+
+.view-all{
+  margin-top: 10px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.member-list{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.member-img {
+  width: 30px;
+  border-radius: 40px;
+  margin: 5px;
+
 }
