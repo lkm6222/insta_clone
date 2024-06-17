@@ -27,7 +27,9 @@
     </header>
 
     <div class="main">
+
       <div class="post">
+        <!-- post1 -->
         <div class="post-header">
           <div class="user-info">
             <h2><img class="user-img" src="./images/potato.jpeg" alt="user-img"></h2>
@@ -36,7 +38,9 @@
               <p id="userState">Sejong, South Korea</p>
             </div>
           </div>
-          <i class="fa-solid fa-ellipsis"></i>
+          <button class="option-btn">
+            <i class="fa-solid fa-ellipsis"></i>
+          </button>
         </div>
 
         <div class="content-img">
@@ -54,13 +58,61 @@
           </div>
           <p><span>좋아요 2,346개</span></p>
           <div class="comment-box">
-            <table class="content-comment">
-              <tr class="comment-list">
-                <td><span>id</span></td>
-                <td>댓글</td>
-                <td><i class="fa-regular fa-heart"></i></td>
-              </tr>
-            </table>
+            <div class="content-comment">
+              <div class="comment-list">
+                <div>id</div>
+                <p>댓글</p>
+              </div>
+              <div class="comment-heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <p>2시간 전</p>
+          </div>
+
+        </div>
+        <div class="comment-input">
+          <input type="text" placeholder="댓글달기...">
+          <button id="putup">게시</button>
+        </div>
+
+        <!-- post2 -->
+
+        <div class="post-header">
+          <div class="user-info">
+            <h2><img class="user-img" src="./images/potato.jpeg" alt="user-img"></h2>
+            <div class="user-id">
+              <a id="userId" href=""><span>yejin</span></a>
+              <p id="userState">Sejong, South Korea</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+
+        <div class="content-img">
+          <img src="./images/멍2.jpeg" alt="upload-img">
+        </div>
+        <div class="content-box">
+          <div class="content-button">
+            <div class="content-btn-left">
+              <button><i class="fa-regular fa-heart"></i></button>
+              <button><i class="fa-regular fa-comment"></i></button>
+            </div>
+            <div class="content-btn-right">
+              <button><i class="fa-regular fa-bookmark"></i></button>
+            </div>
+          </div>
+          <p><span>좋아요 2,346개</span></p>
+          <div class="comment-box">
+            <div class="content-comment">
+              <div class="comment-list">
+                <div>id</div>
+                <p>댓글</p>
+              </div>
+              <div class="comment-heart">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
             <p>2시간 전</p>
           </div>
 
@@ -70,6 +122,9 @@
           <button id="putup">게시</button>
         </div>
       </div>
+
+
+      <!-- 회원추천 창 -->
       <div class="post-recommend">
         <div class="user-info">
           <h2><img class="user-img" src="./images/potato.jpeg" alt="user-img"></h2>
@@ -91,9 +146,36 @@
             </div>
           </div>
         </div>
-        <!-- 반복되는 컨텐츠창 -->
-
+        <div class="recommend-member">
+          <div class="member-list">
+            <h2><img class="member-img" src="./images/user.jpeg" alt="member1-img"></h2>
+            <div class="member-id">
+              <a href=""><span>asdfasdf</span></a>
+              <p>회원님을 위한 추천</p>
+            </div>
+          </div>
+        </div>
       </div>
+
+    </div>
+
+  </div>
+
+  <div class="more-option">
+    <ul>
+      <li class="red-txt">삭제</li>
+      <li>수정</li>
+      <li>다른 사람에게 좋아요 수 숨기기</li>
+      <li>댓글 기능 해제</li>
+      <li>게시물로 이동</li>
+      <li>공유 대상...</li>
+      <li>링크 복사</li>
+      <li>퍼가기</li>
+      <li class="option-close-btn">취소</li>
+    </ul>
+  </div>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>
